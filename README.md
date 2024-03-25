@@ -8,21 +8,23 @@
           * This should leave you with two fastq files. One "[SRA ID]_1.fastq" for the forward read and the other "[SRA ID]_2.fastq" for the reverse read.
           * In our case the files are "SRR18689888_1.fastq" and "SRR18689888_2.fastq"
 
-3. Evaluate read quality using __FastQC__
+2. Evaluate read quality using __FastQC__
      * Input: Raw sequencing data: FASTQ files
      * Command: fastqc SRR18689888_1.fastq SRR18689888_2.fastq
      * Output: Summary graphs and tables to help assess read quality
-4. Assemble the mitochondrial genome using __SMART2__
-     * Inputs:
-          * Sample Name
-          * Seed gene file, FASTA format
-          * Illumina DNA-Seq reads, paired-end FASTQ format
+3. Assemble the mitochondrial genome using __SMART2__
+    * Inputs:
+          * Sample Name: "Name the assembly however you want" 
+          * Seed gene file, FASTA format: "JQ282018.fasta"
+		* This should be a highly conserved sequence from across different fish species
+		* In the case of fish, use a cytochrome b partial cds sequence of the species whose mitogenome you are assembling
+          * Illumina DNA-Seq reads, paired-end FASTQ format: "SRR18689999_1.fastq" and "SRR18689888_2.fastq"
      * Outputs:
-          * Consensus sequences FASTA file (assembled mitogenome)
+          * Consensus sequences FASTA file (assembled mitogenome): "scaffold_seqs.fasta"
           * Annotation
           * Compressed tar archive: images and plots of assemblies graphs, clusters, and annotation
           * Report file
-5. Run alignment of raw FASTQ files with the assembled mitogenome from SMART2 (FASTA) using __Bowtie2__
+4. Run alignment of raw FASTQ files with the assembled mitogenome from SMART2 (FASTA) using __Bowtie2__
      * Raw illumina reads first trimmed using __fastp__ to remove sequencing adaptors
      * Inputs:
           * Mitogenome FASTA as reference genome
