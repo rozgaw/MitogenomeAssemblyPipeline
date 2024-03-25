@@ -10,6 +10,7 @@
 
 3. Evaluate read quality using __FastQC__
      * Input: Raw sequencing data: FASTQ files
+     * Command: fastqc SRR18689888_1.fastq SRR18689888_2.fastq
      * Output: Summary graphs and tables to help assess read quality
 4. Assemble the mitochondrial genome using __SMART2__
      * Inputs:
