@@ -5,7 +5,7 @@
      * Then in the terminal run: "prefetch [SRA ID]
      * In our case, we ran: "prefetch SRR18689888"
      * Next to split the paired end reads run: "fastq-dump -I --split-files SRR18689888"
-     * This should leave yopu with two fastq files. One "[SRR ID]_1.fastq" for the forward read and the other "[SRR ID]_2.fastq" for the reverse read.
+     * This should leave you with two fastq files. One "[SRR ID]_1.fastq" for the forward read and the other "[SRR ID]_2.fastq" for the reverse read. In our case the files are "SRR18689888_1.fastq" and "SRR18689888_2.fastq"
 
 3. Evaluate read quality using __FastQC__
      * Input: Raw sequencing data: FASTQ files
