@@ -12,10 +12,14 @@
      * Input: Raw sequencing data: FASTQ files
      * Command: fastqc SRR18689888_1.fastq SRR18689888_2.fastq
      * Output: Summary graphs and tables to help assess read quality
+     * To look at the visualizations in FastQC:
+       ** open SRR18689888_1_fastqc.html
+       ** open SRR18689888_2_fastqc.html
+       ** opens the html files in your browser to view the visualizations
 3. Assemble the mitochondrial genome using __SMART2__
     * Inputs:
           * Sample Name: "Name the assembly however you want" 
-          * Seed gene file, FASTA format: "JQ282018.fasta"
+          * Seed gene file, FASTA format: "sequence.fasta"
 		* This should be a highly conserved sequence from across different fish species
 		* In the case of fish, use a cytochrome b partial cds sequence of the species whose mitogenome you are assembling
           * Illumina DNA-Seq reads, paired-end FASTQ format: "SRR18689999_1.fastq" and "SRR18689888_2.fastq"
