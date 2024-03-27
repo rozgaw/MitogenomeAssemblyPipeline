@@ -31,9 +31,9 @@
           * Download the mitogenome assembly-Results folder.zip to access output files
 4. Run alignment of raw FASTQ files with the assembled mitogenome from SMART2 (FASTA) using __Bowtie2__
      * Raw illumina reads first trimmed using __fastp__ to remove sequencing adaptors
-     * "fastp -i SRR18689888_1.fastq -I SRR18689888_2.fastq -o out.SRR18689888_1.fastq -O out.SRR18689888_2.fastq"
+     * Command: "fastp -i SRR18689888_1.fastq -I SRR18689888_2.fastq -o out.SRR18689888_1.fastq -O out.SRR18689888_2.fastq"
      * Align the Trimmed FASTQ Files to the Mitogenome:
-     * "bowtie2 -x mitogenome_index -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -S alignment.sam"
+     * Command: "bowtie2 -x mitogenome_index -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -S alignment.sam"
      * Inputs:
           * Mitogenome FASTA as reference genome
           * Raw FASTQ files to be aligned
