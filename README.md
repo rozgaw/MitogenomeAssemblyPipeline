@@ -35,8 +35,8 @@
      * Align the Trimmed FASTQ Files to the Mitogenome:
      * Command: "bowtie2 -x mitogenome_index -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -S alignment.sam"
      * Inputs:
-          * Mitogenome FASTA as reference genome
-          * Raw FASTQ files to be aligned
+          * Mitogenome FASTA (scaffold_seqs.fasta) as reference genome
+          * Trimmed FASTQ files to be aligned
      * Outputs: SAM file of alignments (Can convert to BAM file for efficiency - samtools view -b -F 4 alignment.sam > aligned_reads.bam)
      	* Output file: alignment.sam (OR aligned_reads.bam)
      * Output file will contain sequencing reads that are aligned to the mitogenome - only those reads  will be used for the following steps
