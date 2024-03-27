@@ -20,12 +20,12 @@
     * Inputs:
           * Sample Name: "Name the assembly however you want" 
           * Seed gene file, FASTA format: "sequence.fasta"
-		* This should be a highly conserved sequence from across different fish species
-		* In the case of fish, use a cytochrome b partial cds sequence of the species whose mitogenome you are assembling
+		* This is highly conserved sequence from across different fish species
+		* In our case, we're using a cytochrome b partial cds sequence of the species we're assembling
           * Illumina DNA-Seq reads, paired-end FASTQ format: "SRR18689999_1.fastq" and "SRR18689888_2.fastq"
      * Outputs:
           * Consensus sequences FASTA file (assembled mitogenome): "scaffold_seqs.fasta"
-          * Annotation
+          * Annotation file: Result file 
           * Compressed tar archive: images and plots of assemblies graphs, clusters, and annotation
           * Report file
           * Download the mitogenome assembly-Results folder.zip to access output files
