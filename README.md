@@ -35,7 +35,7 @@
      * Create the Bowtie2 index using the assembled mitogenome from SMART2:
           * Command: "bowtie2-build scaffold_seqs.fasta mitogenome_index"
      * Align the Trimmed FASTQ Files to the Mitogenome:
-          * Command: "bowtie2 -x mitogenome_index -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -S alignment.sam"
+          * Command: "bowtie2 -x mitogenome_index -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -S alignment.sam --al-conc SRR18689888_mapped_%.fq"
      * Inputs:
           * Mitogenome FASTA (scaffold_seqs.fasta) as reference genome
           * Trimmed FASTQ files to be aligned
