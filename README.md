@@ -13,9 +13,9 @@
      * Command: fastqc SRR18689888_1.fastq SRR18689888_2.fastq
      * Output: Summary graphs and tables to help assess read quality
      * To look at the visualizations in FastQC:
-       ** open SRR18689888_1_fastqc.html
-       ** open SRR18689888_2_fastqc.html
-       ** opens the html files in your browser to view the visualizations
+     	* open SRR18689888_1_fastqc.html
+     	* open SRR18689888_2_fastqc.html
+     	* opens the html files in your browser to view the visualizations
 3. Assemble the mitochondrial genome using __SMART2__
     * Inputs:
           * Sample Name: "Name the assembly however you want" 
