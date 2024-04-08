@@ -44,7 +44,8 @@
      * Output file will contain sequencing reads that are aligned to the mitogenome - only those reads  will be used for the following steps
 
 
-NEW PLAN: TRYING OUT GETORGANELLE
+#### NEW PLAN: TRYING OUT GETORGANELLE
+
       * first must download GetOrganelle
-           * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
+            * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
 	   
