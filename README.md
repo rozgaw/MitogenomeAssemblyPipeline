@@ -45,7 +45,6 @@
 
 
 #### NEW PLAN: TRYING OUT GETORGANELLE
-
-      * first must download GetOrganelle
+      * First must download GetOrganelle
             * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
 	   
