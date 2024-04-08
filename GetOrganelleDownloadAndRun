@@ -10,8 +10,8 @@ rm -rf ~/miniconda3/miniconda.sh
 
 # Using miniconda to install GetOrganelle
 conda install -c bioconda getorganelle
-
 # This gives an error "Could not solve for environment specs"
+
 # So instead creating virtual envs for GetOrganelle and then downloading
 # creating envs
 conda create -n getorganelle
@@ -21,3 +21,8 @@ conda install -c bioconda getorganelle
 
 # Next Initializing GetOrganelle and adding database for animal mitochondrial genome
 get_organelle_config.py --add animal_mt
+
+# Next Actually running GetOrganelle
+get_organelle_from_reads.py -1 forward.fq -2 reverse.fq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out
+
+# if you fail with the default database, rerun it using your own seed database (or the output of a first GetOrganelle run) and label database with "-s" and "--genes"
