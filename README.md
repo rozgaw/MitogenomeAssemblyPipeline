@@ -42,3 +42,9 @@
      * Outputs: SAM file of alignments (Can convert to BAM file for efficiency - samtools view -b -F 4 alignment.sam > aligned_reads.bam)
      	* Output file: alignment.sam (OR aligned_reads.bam)
      * Output file will contain sequencing reads that are aligned to the mitogenome - only those reads  will be used for the following steps
+
+
+NEW PLAN: TRYING OUT GETORGANELLE
+      * first must download GetOrganelle
+           * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
+	   
