@@ -1,0 +1,16 @@
+# Once getOrganelle is run in one of 4 ways, we will run Bowtie2 to compare the getOrganelle assembly to the assembly from the paper (GenBank accession ON310810)
+# 4 options:
+        # GetOrganelle using animal_mt seed with fastp adaptor and quality trimmed sequences
+        # GetOrganelle using animal_mt seed with fastp adaptor and no quality trimmed sequences
+        # GetOrganelle using fish cyt_b seed with fastp adaptor and quality trimmed sequences
+        # GetOrganelle using fish cyt_b seed with fastp adaptor and no quality trimmed sequences
+
+# Download the assembled mitogenome from gen bank (I renamed to ACaliMitoG.fasta)
+# Upload file to server in GetOrganelle output folder and make sure you are in that directory
+
+# Build Bowtie Index: bowtie2-build fasta_file index_name
+bowtie2-build ACaliMitoG.fasta ACali
+
+# Running Bowtie2: bowtie2 --quiet -x EcoliK12 -1 GetOrganelleOutput_1.fastq -2 GetOrganelleOutput_2.fastq -S OutfileName.sam
+# can use nohup also
+nohup bowtie2 --quiet -x ACali -1 1-out.SRR18689888_1.fastq -2 2-out.SRR18689888_2.fastq -S AssemblyComp.sam
