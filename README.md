@@ -77,6 +77,11 @@
    * Output: Assembly files
 
 5. Annotate the assembled genome using __MitoFish__ (__MitoAnnotator__)
+   * Input: Mitogenome file in FASTA format
+     	* Needs to be less than 100 Kb
+     	* Note if DNA is circular (complete)
+     	* Note if visualization is desired (slower run time)
+
 6. Compare GetOrganelle assembly to SMART2 assembly using __Bowtie2__
    * Map the assembly output to the paper's output form SMART2 using Bowtie2 to see how they compare
    * Create the Bowtie2 index using the assembled mitogenome from SMART2:
