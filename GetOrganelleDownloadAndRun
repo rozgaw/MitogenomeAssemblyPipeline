@@ -25,6 +25,8 @@ get_organelle_config.py --add animal_mt
 # Make sure you your conda environment you created above is activated before running these commands
 
 # Next Actually running GetOrganelle
+# Will need to use a different seed sequence: downloading partial sequence of the A. californiensis cytochrome b (GenBank accession no. JQ282018)
+
 # Change directory to where you have the trimmed reads
 cd ~/FishMitogenome/
 # run the GetOrganelle command
