@@ -50,5 +50,33 @@
 
 * Map the assembly output to the paper's output using Bowtie2 to see how they compare
 * GetOrganelle eliminates SMART2 and the separate Bowtie2 mapping which makes the pipeline more seamless and user friendly
-  
+
+# "New" Assembly Pipeline
+1. Download SRA FASTQ files
+     * Make sure you have the SRA toolkit installed
+     * In the terminal run: "prefetch [SRA ID]"
+          * In our case, we ran: "prefetch SRR18689888"
+     * Next to split the paired end reads run: "fastq-dump -I --split-files SRR18689888"
+          * This should leave you with two fastq files. One "[SRA ID]_1.fastq" for the forward read and the other "[SRA ID]_2.fastq" for the reverse read.
+          * In our case the files are "SRR18689888_1.fastq" and "SRR18689888_2.fastq"
+
+2. Evaluate read quality using __FastQC__
+     * Input: Raw sequencing data: FASTQ files
+     * Command: fastqc SRR18689888_1.fastq SRR18689888_2.fastq
+     * Output: Summary graphs and tables to help assess read quality
+     * To look at the visualizations in FastQC:
+     	* open SRR18689888_1_fastqc.html
+     	* open SRR18689888_2_fastqc.html
+     	* opens the html files in your browser to view the visualizations
+3. Trim sequences using __fastp__
+   * Input: Raw sequencing data:FASTQ files
+   * Command: "fastp -i SRR18689888_1.fastq -I SRR18689888_2.fastq -o out.SRR18689888_1.fastq -O out.SRR18689888_2.fastq" (might need to fix so that it trims adaptors only)
+   * Output: trimmed fastq files out.file_1.fastq out.file_2.fastq
+
+4. Assemble the mitogenome using __GetOrganelle__
+   * Input: adaptor trimmed fastq files (out.SRR18689888_1.fastq out.SRR18689888_2.fastq
+   * Command: "get_organelle_from_reads.py -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out"
+   * Output: Assembly files
+     
+
 	   
