@@ -22,6 +22,8 @@ conda install -c bioconda getorganelle
 # Next Initializing GetOrganelle and adding database for animal mitochondrial genome
 get_organelle_config.py --add animal_mt
 
+# Make sure you your conda environment you created above is activated before running these commands
+
 # Next Actually running GetOrganelle
 # Change directory to where you have the trimmed reads
 cd ~/FishMitogenome/
