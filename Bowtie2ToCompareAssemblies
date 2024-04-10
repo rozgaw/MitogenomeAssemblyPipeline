@@ -14,3 +14,8 @@ bowtie2-build ACaliMitoG.fasta ACali
 # Running Bowtie2: bowtie2 --quiet -x EcoliK12 -1 GetOrganelleOutput_1.fastq -2 GetOrganelleOutput_2.fastq -S OutfileName.sam
 # can use nohup also
 nohup bowtie2 --quiet -x ACali -1 1-out.SRR18689888_1.fastq -2 2-out.SRR18689888_2.fastq -S AssemblyComp.sam
+
+# Actually running Blast instead...
+        # Need to merge forward and reverse fastq files
+        # Then convert to fasta file
+        # Blast our assembly against the published assembly
