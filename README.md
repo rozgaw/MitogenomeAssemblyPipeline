@@ -49,5 +49,6 @@
             * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
 
 * Map the assembly output to the paper's output using Bowtie2 to see how they compare
+* GetOrganelle eliminates SMART2 and the separate Bowtie2 mapping which makes the pipeline more seamless and user friendly
   
 	   
