@@ -30,9 +30,9 @@ get_organelle_config.py --add animal_mt
 # Change directory to where you have the trimmed reads
 cd ~/FishMitogenome/
 # run the GetOrganelle command
-get_organelle_from_reads.py -1 forward.fq -2 reverse.fq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out
+cat NC_047400.fasta NC_047059.fasta > legume_cp.fasta
+get_organelle_from_reads.py -s legume_cp.fasta -1 forward.fq -2 reverse.fq -o plastome_output -R 15 -k 21,45,65,85,105 -F embplant_pt
+get_organelle_from_reads.py -s seedSeq.fasta -1 forward.fq -2 reverse.fq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out
 
 # in our case, it is:
-get_organelle_from_reads.py -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out
-
-# if you fail with the default database, rerun it using your own seed database (or the output of a first GetOrganelle run) and label database with "-s" and "--genes"
+get_organelle_from_reads.py -s ACaliCytB.fasta -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o fish_mt_out
