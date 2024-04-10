@@ -76,9 +76,7 @@
    * Command: "get_organelle_from_reads.py -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out"
    * Output: Assembly files
 
-5. Annotate the assembled genome using __MitoFish__
-   *
-
+5. Annotate the assembled genome using __MitoFish__ (__MitoAnnotator__)
 6. Compare GetOrganelle assembly to SMART2 assembly using __Bowtie2__
    * Map the assembly output to the paper's output form SMART2 using Bowtie2 to see how they compare
    * Create the Bowtie2 index using the assembled mitogenome from SMART2:
