@@ -16,6 +16,4 @@ bowtie2-build ACaliMitoG.fasta ACali
 nohup bowtie2 --quiet -x ACali -1 1-out.SRR18689888_1.fastq -2 2-out.SRR18689888_2.fastq -S AssemblyComp.sam
 
 # Actually running Blast instead...
-        # Need to merge forward and reverse fastq files
-        # Then convert to fasta file
         # Blast our assembly against the published assembly
