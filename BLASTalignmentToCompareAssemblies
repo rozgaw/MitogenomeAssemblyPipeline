@@ -1,11 +1,14 @@
 BLAST alignment to compare similarity between SMART2 mitogenome assembly and the mitogenome assembly generated from GetOrganelle
-To compare genome sequences: 
+To compare genome sequences:
+
 * Check the box next to __Align two or more sequences__ under the Query Sequence box
 * Blast SMART2 assembled mitogenome against our GetOrganelle assembled mitogenome
 * Name job title and blast the sequences against each other
 * Two results:
+
   * Query sequence (SMART2 assembly) compared to subject sequence (GetOrganelle) and shows similarity
   * How the sequences differ (if they differ at all)
       * Go to the __Alignments tab__ and in the __Alignment view__ drop-down menu select __Pairwise with dots for identities__
+
       * Click the checkbox next to __CDS feature__
         * First result shows base-by-base comparison of the two sequences in two lines
