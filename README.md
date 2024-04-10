@@ -47,4 +47,7 @@
 #### NEW PLAN: TRYING OUT GETORGANELLE
       * First must download GetOrganelle
             * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
+
+* Map the assembly output to the paper's output using Bowtie2 to see how they compare
+  
 	   
