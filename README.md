@@ -82,7 +82,7 @@
      	* Note if DNA is circular (complete)
      	* Note if visualization is desired (slower run time)
    * Output: Annotation.txt
-
+*** OPTIONAL: Necessary for us to show that GetOrganelle is a comparable tool for mitgenome assembly but not necessary for running the pipeline itself ***
 6. Compare GetOrganelle assembly to SMART2 assembly using __Bowtie2__
    * Map the assembly output to the paper's output form SMART2 using Bowtie2 to see how they compare
    * Create the Bowtie2 index using the assembled mitogenome from SMART2:
