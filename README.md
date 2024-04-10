@@ -20,22 +20,35 @@
     * Inputs:
           * Sample Name: "Name the assembly however you want" 
           * Seed gene file, FASTA format: "sequence.fasta"
-		* This should be a highly conserved sequence from across different fish species
-		* In the case of fish, use a cytochrome b partial cds sequence of the species whose mitogenome you are assembling
+		* This is highly conserved sequence from across different fish species
+		* In our case, we're using a cytochrome b partial cds sequence of the species we're assembling
           * Illumina DNA-Seq reads, paired-end FASTQ format: "SRR18689999_1.fastq" and "SRR18689888_2.fastq"
      * Outputs:
           * Consensus sequences FASTA file (assembled mitogenome): "scaffold_seqs.fasta"
-          * Annotation
+          * Annotation file: Result file 
           * Compressed tar archive: images and plots of assemblies graphs, clusters, and annotation
           * Report file
+          * Download the mitogenome assembly-Results folder.zip to access output files
 4. Run alignment of raw FASTQ files with the assembled mitogenome from SMART2 (FASTA) using __Bowtie2__
      * Raw illumina reads first trimmed using __fastp__ to remove sequencing adaptors
-     * "fastp -i SRR18689888_1.fastq -I SRR18689888_2.fastq -o out.SRR18689888_1.fastq -O out.SRR18689888_2.fastq"
+     * Command: "fastp -i SRR18689888_1.fastq -I SRR18689888_2.fastq -o out.SRR18689888_1.fastq -O out.SRR18689888_2.fastq"
+     * Create the Bowtie2 index using the assembled mitogenome from SMART2:
+          * Command: "bowtie2-build scaffold_seqs.fasta mitogenome_index"
      * Align the Trimmed FASTQ Files to the Mitogenome:
-     * "bowtie2 -x mitogenome_index -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -S alignment.sam"
+          * Command: "bowtie2 -x mitogenome_index -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -S alignment.sam --al-conc SRR18689888_mapped_%.fq"
      * Inputs:
-          * Mitogenome FASTA as reference genome
-          * Raw FASTQ files to be aligned
+          * Mitogenome FASTA (scaffold_seqs.fasta) as reference genome
+          * Trimmed FASTQ files to be aligned
      * Outputs: SAM file of alignments (Can convert to BAM file for efficiency - samtools view -b -F 4 alignment.sam > aligned_reads.bam)
      	* Output file: alignment.sam (OR aligned_reads.bam)
      * Output file will contain sequencing reads that are aligned to the mitogenome - only those reads  will be used for the following steps
+
+
+#### NEW PLAN: TRYING OUT GETORGANELLE
+      * First must download GetOrganelle
+            * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
+
+* Map the assembly output to the paper's output using Bowtie2 to see how they compare
+* GetOrganelle eliminates SMART2 and the separate Bowtie2 mapping which makes the pipeline more seamless and user friendly
+  
+	   

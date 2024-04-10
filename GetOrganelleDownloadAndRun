@@ -1,0 +1,36 @@
+# Downloading Miniconda in terminal
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+
+# Initializing Miniconda environment
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
+
+# Using miniconda to install GetOrganelle
+conda install -c bioconda getorganelle
+# This gives an error "Could not solve for environment specs"
+
+# So instead creating virtual envs for GetOrganelle and then downloading
+# creating envs
+conda create -n getorganelle
+conda activate getorganelle
+# now installing
+conda install -c bioconda getorganelle
+
+# Next Initializing GetOrganelle and adding database for animal mitochondrial genome
+get_organelle_config.py --add animal_mt
+
+# Make sure you your conda environment you created above is activated before running these commands
+
+# Next Actually running GetOrganelle
+# Change directory to where you have the trimmed reads
+cd ~/FishMitogenome/
+# run the GetOrganelle command
+get_organelle_from_reads.py -1 forward.fq -2 reverse.fq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out
+
+# in our case, it is:
+get_organelle_from_reads.py -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out
+
+# if you fail with the default database, rerun it using your own seed database (or the output of a first GetOrganelle run) and label database with "-s" and "--genes"
