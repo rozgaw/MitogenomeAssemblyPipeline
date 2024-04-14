@@ -68,7 +68,8 @@
      	* opens the html files in your browser to view the visualizations
 3. Trim sequences using __fastp__
    * Input: Raw sequencing data:FASTQ files
-   * Command: "fastp -i SRR18689888_1.fastq -I SRR18689888_2.fastq -o out.SRR18689888_1.fastq -O out.SRR18689888_2.fastq" (might need to fix so that it trims adaptors only)
+   * Command: "fastp -i SRR18689888_1.fastq -I SRR18689888_2.fastq -o out.SRR18689888_1.fastq -O out.SRR18689888_2.fastq"
+   * Command to trim adaptors only (No quality trimming): "fastp -i SRR18689888_1.fastq -I SRR18689888_2.fastq -o out.SRR18689888_1.fastq -O out.SRR18689888_2.fastq -Q"
    * Output: trimmed fastq files out.file_1.fastq out.file_2.fastq
 
 4. Assemble the mitogenome using __GetOrganelle__
