@@ -74,7 +74,7 @@
 
 4. Assemble the mitogenome using __GetOrganelle__
    * Input: adaptor trimmed fastq files (out.SRR18689888_1.fastq out.SRR18689888_2.fastq
-   * Command: "get_organelle_from_reads.py -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out"
+   * Command: "get_organelle_from_reads.py -s cytb.fasta -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o fish_assembly"
    * Output: 
    	* *.path_sequence.fasta, each fasta file is an assembled genome
    	* *.selected_graph.gfa, the organelle-only assembly graph 
