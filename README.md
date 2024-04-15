@@ -82,7 +82,11 @@
      	* Needs to be less than 100 Kb
      	* Note if DNA is circular (complete)
      	* Note if visualization is desired (slower run time)
-   * Output: Annotation.txt
+   * Output: Download the files from MitoAnnotator, it only keeps them on the server for 10 days 
+   	* Annotation.pdf
+   	* genes.fasta
+   	* raw.fasta
+   	* Annotation.txt
   
 
 
