@@ -30,7 +30,7 @@ get_organelle_config.py --add animal_mt
 # Change directory to where you have the trimmed reads
 cd ~/FishMitogenome/
 # run the GetOrganelle command
-get_organelle_from_reads.py -s seedSeq.fasta -1 forward.fq -2 reverse.fq -R 10 -k 21,45,65,85,105 -F animal_mt -o animal_mt_out
+get_organelle_from_reads.py -s cytb.fasta -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o fish_assembly
 
 # in our case, it is:
 get_organelle_from_reads.py -s ACaliCytB.fasta -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o fish_mt_out
