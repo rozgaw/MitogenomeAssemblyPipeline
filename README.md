@@ -1,9 +1,12 @@
 # Fish Mitogenome Assembly Pipeline
 
-## Dependencies & Packages 
-* SRA toolkit <https://github.com/ncbi/sra-tools> 
+## Dependencies 
+* SRA toolkit <https://github.com/ncbi/sra-tools>
+* FastQC <https://github.com/s-andrews/FastQC>
+* fastp <https://github.com/OpenGene/fastp>
+* GetOrganelle <https://github.com/Kinggerm/GetOrganelle>  
 
-
+## Python Packages 
 
 
 1. Download SRA FASTQ files
