@@ -1,5 +1,11 @@
 # Fish Mitogenome Assembly Pipeline
 
+## Dependencies & Packages 
+* SRA toolkit <https://github.com/ncbi/sra-tools> 
+
+
+
+
 1. Download SRA FASTQ files
      * Make sure you have the SRA toolkit installed
      * In the terminal run: "prefetch [SRA ID]"
