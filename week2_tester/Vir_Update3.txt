@@ -1,0 +1,6 @@
+Over the course of the past few weeeks, I have made progress in getting fastp to appropriately trim each of the fastq files generated prior. These fastq files were then inputted into GetOrganelle's default animal mitogenome assembly recipe
+
+However, Hailey's BLAST+ of the assembly made using the seed sequence from the study was 99% identical to the assembly produced in the study. Because of this, we have opted to avoid using the default recipe.
+
+This week, we worked on the App Note Rough Draft together, and have begun plans for finalizing the wrapper script to streamline fastq file processing, reading, assembly, and visualization.
+
