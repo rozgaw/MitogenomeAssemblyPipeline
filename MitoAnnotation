@@ -13,4 +13,9 @@ __MitoAnnotator__
 * annotates fish mitogenomes fast and accurately
 *Input: Mitogenome file in FASTA format
   * If downloading files from NCBI to annotate they give you an *.fna file which MitoAnnotator can't recognize
-  * Solution: 
+  * Solution: Change the file extenstion 
+        * cp *.fna *.fasta
+* Note whether your genome is circular (complete) and if you want visualization 
+  * MitoAnnotator automatically finds tRNAPhe gene and adjusts the coordinates so that its first portion contains the tRNAPhe gene. If not applicable say genome is not circular
+
+*Output: Annotation files and annotation visualization
