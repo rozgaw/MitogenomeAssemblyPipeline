@@ -10,3 +10,7 @@ Why you would use this:
 
 
 __MitoAnnotator__
+* annotates fish mitogenomes fast and accurately
+*Input: Mitogenome file in FASTA format
+  * If downloading files from NCBI to annotate they give you an *.fna file which MitoAnnotator can't recognize
+  * Solution: 
