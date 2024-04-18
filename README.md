@@ -16,7 +16,7 @@
 * argparse
 * glob
 
-### Assembly steps 
+# Assembly steps 
 
 1. Download SRA FASTQ files
      * Make sure you have the SRA toolkit installed
