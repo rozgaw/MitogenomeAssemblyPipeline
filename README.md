@@ -12,6 +12,9 @@
     * Bandage <https://rrwick.github.io/Bandage/>
 
 ## Python Packages 
+* os
+* argparse
+* glob
 
 
 1. Download SRA FASTQ files
