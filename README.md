@@ -3,8 +3,13 @@
 ## Dependencies 
 * SRA toolkit <https://github.com/ncbi/sra-tools>
 * FastQC <https://github.com/s-andrews/FastQC>
+    * Java <https://www.java.com/en/download/>
 * fastp <https://github.com/OpenGene/fastp>
-* GetOrganelle <https://github.com/Kinggerm/GetOrganelle>  
+* GetOrganelle <https://github.com/Kinggerm/GetOrganelle>
+    * SPAdes <https://github.com/ablab/spades>
+    * Bowtie2 <https://github.com/BenLangmead/bowtie2>
+    * BLAST+ <https://www.ncbi.nlm.nih.gov/books/NBK279690/>
+    * Bandage <https://rrwick.github.io/Bandage/>
 
 ## Python Packages 
 
