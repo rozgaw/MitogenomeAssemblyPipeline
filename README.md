@@ -43,7 +43,7 @@
 
 4. Assemble the mitogenome using __GetOrganelle__
    * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
-   * Input: adaptor trimmed fastq files (out.SRR18689888_1.fastq, out.SRR18689888_2.fastq)
+   * Input: adaptor trimmed fastq files (out.SRR18689888_1.fastq, out.SRR18689888_2.fastq) and seed sequence (GenBank accession no. JQ282018: cytB gene fasta file)
    * Command: "get_organelle_from_reads.py -s cytb.fasta -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o fish_assembly"
    * Output: 
    	    * *.path_sequence.fasta, each fasta file is an assembled genome
@@ -53,7 +53,7 @@
    	    * extended_K*.assembly_graph.fastg.extend_embplant_pt-embplant_mt.fastg, a simplified assembly graph
    	    * extended_K*.assembly_graph.fastg.extend_embplant_pt-embplant_mt.csv, a tab-format contig label file for bandage visualization
 
-   * Most important file is the *.fasta file and all of teh other files can deleted/ignored if the full genome is complete (you can find this information in the log file too)
+   * Most important file is the *.fasta file and all of the other files can deleted/ignored if the full genome is complete (you can find this information in the log file too)
 
 5. Annotate the assembled genome using __MitoFish__ (__MitoAnnotator__)
    * Input: Mitogenome file in FASTA format
