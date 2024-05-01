@@ -104,7 +104,7 @@
    * all the assembly files and visualization graphs
    * fasta file is the important one!
    
-* Running with the sample data (For Dr. Wheeler)
+## Running with the sample data (For Dr. Wheeler)
      * This data can be found in the "Test" portion of the GetOrganelle GitHub <https://github.com/Kinggerm/GetOrganelle#test>
      * Download the simulated Arabidopsis thaliana WGS dataset:
           * ```wget https://github.com/Kinggerm/GetOrganelleGallery/raw/master/Test/reads/Arabidopsis_simulated.1.fq.gz```
