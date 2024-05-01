@@ -42,7 +42,7 @@
    * Output: trimmed fastq files out.file_1.fastq out.file_2.fastq
 
 4. Assemble the mitogenome using __GetOrganelle__
-   * Use the following page for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
+   * Use the following page or our "GetOrganelleDownloadAndRun" file for download instructions: https://github.com/Kinggerm/GetOrganelle/wiki/Installation#installation
    * Input: adaptor trimmed fastq files (out.SRR18689888_1.fastq, out.SRR18689888_2.fastq) and seed sequence (GenBank accession no. JQ282018: cytB gene fasta file)
    * Command: "get_organelle_from_reads.py -s cytb.fasta -1 out.SRR18689888_1.fastq -2 out.SRR18689888_2.fastq -R 10 -k 21,45,65,85,105 -F animal_mt -o fish_assembly"
    * Output: 
