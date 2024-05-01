@@ -78,5 +78,18 @@
 
 ## Configure Environment 
 * Command to clone this repo to your machine
-* ''' git clone https://github.com/rozgaw/MitogenomeAssemblyPipeline.git '''
+* ``` git clone https://github.com/rozgaw/MitogenomeAssemblyPipeline.git ```
+* If you downloaded GetOrganelle following Conda's instructions or our instructions
+     * ``` conda activate getorganelle ```
+ 
+## Running the Pipeline
+* Now that this github is cloned and your environment is configured correctly, you can actually run this pipeline.
+* To run the full pipeline, it can be run two different ways
+* For SRA files:
+     * ``` python3 auto_fish.py ```
+     * prompts you for an SRA URL to copy and paste into terminal and hit enter
+* For fastq files:
+     * ``` python3 fish_pipeline.py  --fastq --file1 path_1.fastq --file2 path_2.fastq ```
+
+
 
