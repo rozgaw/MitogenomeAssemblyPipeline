@@ -72,3 +72,11 @@
 6. Compare GetOrganelle assembly to SMART2 assembly using __BLAST__
    * Map the assembly output to the paper's output from SMART2 using BLAST to see how they compare
    * The published assembly can be accessed using GenBank accession no. ON310810
+  
+
+### Fish Mitogenome Automated Pipeline
+
+## Configure Environment 
+* Command to clone this repo to your machine
+* <git clone https://github.com/>
+
