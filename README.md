@@ -79,6 +79,8 @@
 ## Configure Environment 
 * Command to clone this repo to your machine
 * ``` git clone https://github.com/rozgaw/MitogenomeAssemblyPipeline.git ```
+* ``` cd MitogenomeAssemblyPipeline ```
+* Ensure all the necessaey files are in this directory
 * If you downloaded GetOrganelle following Conda's instructions or our instructions
      * ``` conda activate getorganelle ```
  
