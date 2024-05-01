@@ -93,6 +93,17 @@
 * For fastq files:
      * ``` python3 fish_pipeline.py  --fastq --file1 path_1.fastq --file2 path_2.fastq ```
 
+* Output:
+* untrimmed_fastqs directory
+   * untrimmed fastq files you start with
+* fastqc directory
+   * 2 HTML files with quality control infomation and visualization (can only view in a web browser)
+* trimmed_fastqs directory 
+   * trimmed file outputs from fastp
+* mito_fish_assembly
+   * all the assembly files and visualization graphs
+   * fasta file is the important one!
+   
 * Running with the sample data (For Dr. Wheeler)
      * This data can be found in the "Test" portion of the GetOrganelle GitHub <https://github.com/Kinggerm/GetOrganelle#test>
      * Download the simulated Arabidopsis thaliana WGS dataset:
