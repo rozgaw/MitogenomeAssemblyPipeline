@@ -1,5 +1,0 @@
-The past two weeks, I have been focused on getting GetOrganelle to work as a potential replacement for SMART2 and Sequencher. So far, GetOrganelle has been able to produce an assembly using SPades and the standard animal mitogenome seed sequence that GetOrganelle recommends. However, I have not yet run BowTie2 to determine whether or not the assembly is accurate.
-
-Additionally, fastp only managed to trim the reversed-end sequence and not the forward-end sequence. I am looking to correct this issue, or, if time is scarce, source those files from my groupmates.
-
-I also want to compare the accuracy of GetOrganelle when using their standard animal mitogenome seed sequence versus an organism specific seed sequence. However, it might be best to err on the side of caution and commit to only implementing the organism specific seed sequences.
