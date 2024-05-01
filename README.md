@@ -92,7 +92,7 @@
      * prompts you for an SRA URL to copy and paste into terminal and hit enter
 * For fastq files:
      * ``` python3 fish_pipeline.py  --fastq --file1 path_1.fastq --file2 path_2.fastq ```
-* Pipeline runs with the cytB.fasta file as the seed sequence. If you want to use the assembled mitogenome sequence (or any other seed sequence) you have to switch that file in the auto_fish.py code
+* Pipeline runs with the cytB.fasta file as the seed sequence. If you want to use the assembled mitogenome sequence, GetOrganelleMitogenomeAssemblyACali.fasta, (or any other seed sequence) you have to switch that file in the auto_fish.py code
 * Output:
 * untrimmed_fastqs directory
    * untrimmed fastq files you start with
