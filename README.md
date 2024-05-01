@@ -74,7 +74,7 @@
    * The published assembly can be accessed using GenBank accession no. ON310810
   
 
-### Fish Mitogenome Automated Pipeline
+# Fish Mitogenome Automated Pipeline
 
 ## Configure Environment 
 * Command to clone this repo to your machine
@@ -91,5 +91,5 @@
 * For fastq files:
      * ``` python3 fish_pipeline.py  --fastq --file1 path_1.fastq --file2 path_2.fastq ```
 
-
+* Running with the sample data (For Dr. Wheeler)
 
