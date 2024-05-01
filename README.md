@@ -105,10 +105,10 @@
    * fasta file is the important one!
    
 ## Running with the sample data (For Dr. Wheeler)
-     * This data can be found in the "Test" portion of the GetOrganelle GitHub <https://github.com/Kinggerm/GetOrganelle#test>
-     * Download the simulated Arabidopsis thaliana WGS dataset:
-          * ```wget https://github.com/Kinggerm/GetOrganelleGallery/raw/master/Test/reads/Arabidopsis_simulated.1.fq.gz```
-          * ```wget https://github.com/Kinggerm/GetOrganelleGallery/raw/master/Test/reads/Arabidopsis_simulated.2.fq.gz```
-     * Then run the fast plastome assembly (memory: ~600MB, CPU time: ~60s):
-          * ```get_organelle_from_reads.py -1 Arabidopsis_simulated.1.fq.gz -2 Arabidopsis_simulated.2.fq.gz -t 1 -o Arabidopsis_simulated.plastome -F embplant_pt -R 10```
-          * This usually takes under 5 minutes to run on the class server
+* This data can be found in the "Test" portion of the GetOrganelle GitHub <https://github.com/Kinggerm/GetOrganelle#test>
+* Download the simulated Arabidopsis thaliana WGS dataset:
+   * ```wget https://github.com/Kinggerm/GetOrganelleGallery/raw/master/Test/reads/Arabidopsis_simulated.1.fq.gz```
+   * ```wget https://github.com/Kinggerm/GetOrganelleGallery/raw/master/Test/reads/Arabidopsis_simulated.2.fq.gz```
+   * Then run the fast plastome assembly (memory: ~600MB, CPU time: ~60s):
+   * ```get_organelle_from_reads.py -1 Arabidopsis_simulated.1.fq.gz -2 Arabidopsis_simulated.2.fq.gz -t 1 -o Arabidopsis_simulated.plastome -F embplant_pt -R 10```
+   * This usually takes under 5 minutes to run on the class server
