@@ -78,5 +78,5 @@
 
 ## Configure Environment 
 * Command to clone this repo to your machine
-* <git clone https://github.com/>
+* <git clone https://github.com/rozgaw/MitogenomeAssemblyPipeline.git>
 
